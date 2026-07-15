@@ -1,0 +1,37 @@
+\.env
+*.json
+!requirements.json  # If you use one, keep it
+firebase_credentials.json
+service-account-file.json
+client_secret.json
+
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
+
+# --- Google Cloud / Firebase Specifics ---
+.firebase/
+.gcloudignore
+
+# app specific stuff
+books/*
+cache_cleaner.py
+llm_utils/count_pdf_tokens.py

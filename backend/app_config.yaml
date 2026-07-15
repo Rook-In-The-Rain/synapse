@@ -1,0 +1,12 @@
+ai_models:
+  study_model: "gemini-3-flash-preview"
+  relaxer_model: "gemini-3.1-flash-lite"
+
+ai_settings:
+  study_model:
+    temperature: 0.7
+    top_p: 0.85
+    cache_ttl: 1800 # This number is in seconds
+  relaxer_model:
+    temperature: 1.0
+    top_p: 0.9
