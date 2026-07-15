@@ -72,7 +72,6 @@ class FirestoreManager:
         except Exception as e:
             print(f"Error: {e}")
     
-
     def fetch_chat_history(self, uid: str, chatid: str, *args, limit: int):
         chat_ref = self.db.collection("users").document(uid).collection("chats").document(chatid)
         messages_query = chat_ref.collection("messages").order_by("timestamp", direction=firestore.Query.DESCENDING).limit(limit).get()
