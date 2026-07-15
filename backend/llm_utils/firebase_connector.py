@@ -47,22 +47,6 @@ class FirestoreManager:
         except Exception as e:
             print(f"Error: {e}")
 
-    def fetch_chat_length(self, uid: str, chatid: str) -> int:
-        try:
-            messages_ref = self.db.collection("users").document(uid).collection("chats").document(chatid).collection("messages")
-
-            query = messages_ref.count()
-            results = query.get()
-            
-            count = results[0][0].value
-            
-            return count
-
-        except Exception as e:
-            print(f"Error fetching chat length: {e}")
-            return 0
-    
-
     def get_user_summary(self, uid: str) -> str:
         try:
             doc = self.db.collection("users").document(uid).get()
