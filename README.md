@@ -27,7 +27,7 @@ A full account system is of course also provided, powered mostly by Firebase Aut
 
 ## How to use
 
-You're gonna need a `firebase_options.dart` and `firebase_options.py` file, along with a `.env` file in Python to run this app, as the API keys are required. Additionally, ngrok may be downloaded. If that is not possible, then change the URL in `backend_connector.dart` in the frontend to a localhost URL
+You're gonna need a `firebase_options.dart`(in the frontend) and `firebase_credentials.json`(in the backend) file, along with a `.env` file in Python to run this app, as the API keys are required. Additionally, ngrok may be downloaded. If that is not possible, then change the URL in `backend_connector.dart` in the frontend to a localhost URL
 
 ### For the frontend
 - run `flutter pub get` then `flutter run -d macos` (I mostly tested this on macos only).
